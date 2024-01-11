@@ -1,13 +1,18 @@
 
-
-interval = setInterval(function() {
-    var countFrom = 60
+function countDown(){
 
     var timeOut = 0
 
-    if (countFrom < timeOut){
+    if (countFrom > timeOut){
         console.log('hello world')
+        countFrom -= 1;
+        console.log(countFrom)
     } else{
         clearInterval(interval)
     }
-}, 1000)
+}
+
+
+var countFrom = 5
+
+interval = setInterval(countDown, 1000)
