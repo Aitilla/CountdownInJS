@@ -12,7 +12,6 @@ function countDown(){
     }
 }
 
-
 var countFrom = 5
 
 interval = setInterval(countDown, 1000)
