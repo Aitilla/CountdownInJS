@@ -1,7 +1,7 @@
 
 function countDown(){
 
-    let timeOut = 0
+    const timeOut = 0
 
     if (timeLeft > timeOut){
         timeLeft -= 1;
@@ -15,11 +15,11 @@ function countDown(){
 
 let timeLeft = 60
 
-let displayTime = document.createElement('p')
+const displayTime = document.createElement('p')
 displayTime.classList.add('desiredClassName')
 displayTime.id = 'desiredID'
 
-let div = document.getElementById('display')
+const div = document.getElementById('display')
 div.appendChild(displayTime)
 
 interval = setInterval(countDown, 1000)
