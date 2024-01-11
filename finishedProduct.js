@@ -13,13 +13,13 @@ function countDown(){
     }
 }
 
-var timeLeft = 60
+let timeLeft = 60
 
-var displayTime = document.createElement('p')
+let displayTime = document.createElement('p')
 displayTime.classList.add('desiredClassName')
 displayTime.id = 'desiredID'
 
-var div = document.getElementById('display')
+let div = document.getElementById('display')
 div.appendChild(displayTime)
 
 interval = setInterval(countDown, 1000)
