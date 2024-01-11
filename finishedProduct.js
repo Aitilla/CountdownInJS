@@ -4,7 +4,6 @@ function countDown(){
     let timeOut = 0
 
     if (timeLeft > timeOut){
-        console.log('hello world')
         timeLeft -= 1;
         console.log(timeLeft)
         displayTime.innerText = timeLeft
