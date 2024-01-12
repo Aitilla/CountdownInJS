@@ -4,9 +4,9 @@ function countDown(){
     const timeOut = 0
 
     if (timeLeft > timeOut){
-        timeLeft -= 1;
         console.log(timeLeft)
         displayTime.innerText = `You have ${timeLeft} seconds left to authenticate`
+        timeLeft -= 1;
     } else{
         clearInterval(interval)
         displayTime.innerText = 'You are out of time to authenticate, please try again.'
